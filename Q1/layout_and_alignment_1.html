@@ -23,7 +23,7 @@
 			.top{
 				padding: 16px;
 				height: 80px;
-				background: red
+				background: red;
 			}
 
 			.left{
@@ -41,12 +41,52 @@
 				color: white;
 				font-size: 36px;
 			}
+			
+			.left {
+				width: 200px;
+				overflow: scroll;
+			}
+			.right {
+				flex: 1 1 auto;
+			}
+
+			.content {
+				display: flex;
+		    max-height: calc(100% - 112px);
+			}
+
+			.A {
+				float: left;
+			}
+			.B {
+				float: right;
+			}
+			.C {
+
+			}
+
+			span {
+				color: white;
+				font-size: 36px;
+			}
+			
 		</style>
 
 
 	</head>
 
 	<body ng-app="app" ng-controller="Q1Controller" layout="column" flex>
+
+	<div class="container">
+		<div class="top">
+			<span class="A">A</span>
+			<span class="B">B</span>
+		</div>
+		<div class="content">
+			<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt, ducimus. In, rem. Repellendus deserunt laborum adipisci consequatur, repudiandae quia at provident veritatis ipsum eos. Veniam eum cupiditate ea quidem ab, quam voluptates corrupti iusto iure vitae. Dolorem inventore, culpa ad quia expedita eveniet sint. Facere, enim, ratione? Quam nesciunt officia, commodi reiciendis doloremque dolorem fugiat odio facere adipisci provident nemo, tempora possimus ipsam veritatis tenetur cupiditate illo saepe inventore ex aliquid voluptates. Vel quos excepturi vero, quibusdam voluptatum eos voluptas itaque voluptate consectetur. Labore aliquid molestias optio, recusandae enim soluta assumenda fugiat, tenetur voluptas eius quia, magnam similique. Quo in incidunt ipsum non vitae deserunt repellat tenetur quos odit, temporibus! Sit, sint voluptatum repellendus id facilis ipsa illo commodi, nobis, illum omnis labore praesentium. Vitae vel eligendi totam veniam facere illum quis ut natus. Vitae nostrum numquam nemo inventore at ex omnis, mollitia blanditiis, porro, sed soluta iusto a nulla. Laborum facilis odit dolorem eius culpa, numquam error nam accusamus magni minus. Aperiam, rem repellat ipsa itaque dolor laborum iure assumenda, laboriosam officia aut ex! Velit tempore, officiis ipsa adipisci maiores quas nostrum veniam mollitia. Nobis magnam expedita cumque perspiciatis, vel vero totam, repellendus ipsum dolorum ullam aspernatur quidem.</div>
+			<div class="right"><span class="C">C</span></div>
+		</div>
+	</div>
 
 	</body>
 

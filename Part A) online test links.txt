@@ -1,0 +1,14 @@
+1.CSS (25 questions) 
+http://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS
+
+
+2.Javascript (25 questions)
+http://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript
+
+
+3.jQuery (25 questions) 
+http://www.w3schools.com/quiztest/quiztest.asp?qtest=jQuery
+
+
+4.PHP (25 questions)
+http://www.w3schools.com/quiztest/quiztest.asp?qtest=PHP

@@ -1,0 +1,58 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<title>G-Hub front-end developer test</title>
+	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link rel="stylesheet" href="../Libs/angular-material.min.css">
+
+		<script src="../Libs/angular.min.js"></script>
+		<script src="../Libs/angular-aria.min.js"></script>
+		<script src="../Libs/angular-animate.min.js"></script>
+		<script src="../Libs/angular-messages.min.js"></script>
+		<script src="../Libs/angular-route.js"></script>
+		<script src="../Libs/angular-material.min.js"></script>
+
+    	<script src="controller.js"></script>
+
+
+		<style>
+
+			md-content{
+				padding: 16px;
+				background: #134a69;
+				color: white;
+			}
+			md-list-item{
+				border-bottom: 1px solid rgba(255,255,255,0.5);
+			}
+
+		</style>
+
+
+	</head>
+
+	<body ng-app="app" ng-controller="Q2Controller" layout="column">
+
+		<md-content flex>
+
+			<md-list>
+
+				<md-list-item ng-repeat="sensor in sensorList" layout="row" layout-align="space-between center">
+					<div ng-bind="sensor.name" flex></div>
+					<div ng-bind="sensor.battery_level"></div>
+				</md-list-item>
+
+			</md-list>
+
+		</md-content>
+
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,32 @@
+<div align-layout="end" flex>
+  <div class="null" ng-if="sensor.battery_level == null">
+    <img src="../assets/images/icon-battery-na.svg" />
+    <span>N/A</span>
+  </div>
+
+  <div class="low" ng-if="sensor.battery_level <= 20 && sensor.battery_level != null" flex>
+    <img src="../assets/images/icon-battery-low.svg" />
+    <span>{{ sensor.battery_level }} %</span>
+  </div>
+
+  <div class="ok" ng-if="sensor.battery_level > 20 && sensor.battery_level <= 50">
+    <img src="../assets/images/icon-battery-ok.svg" />
+    <span>{{ sensor.battery_level }} %</span>
+  </div>
+
+  <div class="high" ng-if="sensor.battery_level > 50">
+    <img src="../assets/images/icon-battery-high.svg" />
+    <span>{{ sensor.battery_level }} %</span>
+  </div>
+</div>
+
+<!-- <div ng-if="sensor.battery_level" 
+   ng-class="{ 
+    na: null, 
+    low: sensor.battery_level < 20,
+    ok: sensor.battery_level > 20 && sensor.battery_level < 50,
+    high: sensor.battery_level > 50 }">
+
+    
+    <span>{{ sensor.battery_level }} %</span>
+    </div> -->

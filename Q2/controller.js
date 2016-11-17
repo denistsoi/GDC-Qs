@@ -40,10 +40,9 @@ app.controller('Q2Controller', function($scope) {
 			name : "Sensor 9",
 			battery_level : 9.99
 		}
-	]
-	
-	
-
-
-	
+	]	
+}).directive('batteryIndicator', function() {
+	return {
+		templateUrl: '../directive/battery-indicator.html'
+	}
 });

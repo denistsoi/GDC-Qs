@@ -1,0 +1,30 @@
+/*.battery-indicator {
+  alignment-baseline: baseline;
+  display: flex;
+  align-content: center;
+}
+
+.battery-indicator img {
+  height: 32px;
+}
+.battery-indicator img {
+  height: 32px;
+}
+
+.null {
+  color: #fff;
+  opacity: .5;
+}
+
+.high {
+  color: #00e636;
+  opacity: .5;
+}
+
+.ok {
+  color: #ffd640;
+}
+
+.low {
+  color: #fc4545;
+}*/

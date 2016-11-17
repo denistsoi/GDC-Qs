@@ -42,12 +42,14 @@
 				font-size: 36px;
 			}
 			
-			.left {
+			/*.left {
 				width: 200px;
 				overflow: scroll;
 			}
 			.right {
 				flex: 1 1 auto;
+				text-align: end;
+				display: flex;
 			}
 
 			.content {
@@ -62,13 +64,13 @@
 				float: right;
 			}
 			.C {
-
+				align-self: flex-end;
 			}
 
 			span {
 				color: white;
 				font-size: 36px;
-			}
+			}*/
 			
 		</style>
 
@@ -78,13 +80,13 @@
 	<body ng-app="app" ng-controller="Q1Controller" layout="column" flex>
 
 	<div class="container">
-		<div class="top">
-			<span class="A">A</span>
-			<span class="B">B</span>
+		<div class="top" flex="grow" layout="row" md-toolbar>
+			<div flex>A</div>
+			<div flex layout-align="end">B</div>
 		</div>
-		<div class="content">
-			<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt, ducimus. In, rem. Repellendus deserunt laborum adipisci consequatur, repudiandae quia at provident veritatis ipsum eos. Veniam eum cupiditate ea quidem ab, quam voluptates corrupti iusto iure vitae. Dolorem inventore, culpa ad quia expedita eveniet sint. Facere, enim, ratione? Quam nesciunt officia, commodi reiciendis doloremque dolorem fugiat odio facere adipisci provident nemo, tempora possimus ipsam veritatis tenetur cupiditate illo saepe inventore ex aliquid voluptates. Vel quos excepturi vero, quibusdam voluptatum eos voluptas itaque voluptate consectetur. Labore aliquid molestias optio, recusandae enim soluta assumenda fugiat, tenetur voluptas eius quia, magnam similique. Quo in incidunt ipsum non vitae deserunt repellat tenetur quos odit, temporibus! Sit, sint voluptatum repellendus id facilis ipsa illo commodi, nobis, illum omnis labore praesentium. Vitae vel eligendi totam veniam facere illum quis ut natus. Vitae nostrum numquam nemo inventore at ex omnis, mollitia blanditiis, porro, sed soluta iusto a nulla. Laborum facilis odit dolorem eius culpa, numquam error nam accusamus magni minus. Aperiam, rem repellat ipsa itaque dolor laborum iure assumenda, laboriosam officia aut ex! Velit tempore, officiis ipsa adipisci maiores quas nostrum veniam mollitia. Nobis magnam expedita cumque perspiciatis, vel vero totam, repellendus ipsum dolorum ullam aspernatur quidem.</div>
-			<div class="right"><span class="C">C</span></div>
+		<div class="content" flex layout="row">
+			<div class="left" flex="initial" md-sidebar>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt, ducimus. In, rem. Repellendus deserunt laborum adipisci consequatur, repudiandae quia at provident veritatis ipsum eos. Veniam eum cupiditate ea quidem ab, quam voluptates corrupti iusto iure vitae. Dolorem inventore, culpa ad quia expedita eveniet sint. Facere, enim, ratione? Quam nesciunt officia, commodi reiciendis doloremque dolorem fugiat odio facere adipisci provident nemo, tempora possimus ipsam veritatis tenetur cupiditate illo saepe inventore ex aliquid voluptates. Vel quos excepturi vero, quibusdam voluptatum eos voluptas itaque voluptate consectetur. Labore aliquid molestias optio, recusandae enim soluta assumenda fugiat, tenetur voluptas eius quia, magnam similique. Quo in incidunt ipsum non vitae deserunt repellat tenetur quos odit, temporibus! Sit, sint voluptatum repellendus id facilis ipsa illo commodi, nobis, illum omnis labore praesentium. Vitae vel eligendi totam veniam facere illum quis ut natus. Vitae nostrum numquam nemo inventore at ex omnis, mollitia blanditiis, porro, sed soluta iusto a nulla. Laborum facilis odit dolorem eius culpa, numquam error nam accusamus magni minus. Aperiam, rem repellat ipsa itaque dolor laborum iure assumenda, laboriosam officia aut ex! Velit tempore, officiis ipsa adipisci maiores quas nostrum veniam mollitia. Nobis magnam expedita cumque perspiciatis, vel vero totam, repellendus ipsum dolorum ullam aspernatur quidem.</div>
+			<div class="right" flex="grow" layout-align="end end" md-content><div flex class="C">C</div></div>
 		</div>
 	</div>
 

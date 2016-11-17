@@ -8,6 +8,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<link rel="stylesheet" href="../Libs/angular-material.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="../directive/battery-indicator.css"></link>
 
 		<script src="../Libs/angular.min.js"></script>
 		<script src="../Libs/angular-aria.min.js"></script>
@@ -33,6 +35,7 @@
 		</style>
 
 
+
 	</head>
 
 	<body ng-app="app" ng-controller="Q2Controller" layout="column">
@@ -43,7 +46,8 @@
 
 				<md-list-item ng-repeat="sensor in sensorList" layout="row" layout-align="space-between center">
 					<div ng-bind="sensor.name" flex></div>
-					<div ng-bind="sensor.battery_level"></div>
+					<!-- <div ng-bind="sensor.battery_level"></div> -->
+					<battery-indicator></battery-indicator>
 				</md-list-item>
 
 			</md-list>

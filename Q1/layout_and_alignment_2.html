@@ -25,6 +25,8 @@
 				padding: 16px;
 				width: 240px;
 				background: red;
+				/*flex-direction: column;*/
+				/*align-content: flex-end;*/
 			}
 
 			.middle{
@@ -69,10 +71,10 @@
 	</head>
 
 	<body ng-app="app" ng-controller="Q1Controller" layout="row" flex>
-	<div class="container">
-		<div class="left"><span class="A">A</span></div>
-		<div class="middle"><span class="B">B</span></div>
-		<div class="right"><span class="C">C</span></div>
+	<div class="container" layout="row">
+		<div class="left" column layout layout-align="start end"><span class="A">A</span></div>
+		<div class="middle" column><span class="B">B</span></div>
+		<div class="right" column layout layout-align="center end"><span class="C">C</span></div>
 	</div>
 	</body>
 
